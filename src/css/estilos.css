@@ -1,0 +1,140 @@
+body {
+	font-family: 'Poppins', sans-serif;
+	max-width: 1280px;
+	margin: 0 auto;
+	background-image: url(../imagens/dia.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #333333;
+}
+
+body.modo-escuro {
+	background-image: url(../imagens/noite.png);
+	color: #f5f5f5;
+
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: 25px;
+	background-color: rgba(0, 0, 0, 0.3);
+	margin: 20px;
+	border-radius: 15px;
+}
+
+header .logo,
+header .imagem-botao {
+	width: 30px;
+	height: 10;
+	transition: 0.2s ease-in-out;
+}
+
+header .logo2 {
+	width: 100px;
+	transition: 0.2s ease-in-out;
+}
+
+header #botao-alterar-tema {
+	background: none;
+	border: none;
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-pokemon:hover {
+	transform: scale(1.05);
+	cursor: pointer;
+}
+
+main {
+	padding: 25px;
+}
+
+main .listagem-pokemon {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	justify-content: center;
+}
+
+main .cartao-pokemon {
+	background-color: #ebedf5;
+	width: 200px;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+	border-radius: 15px;
+	transition: 0.2s ease-in-out;
+	border: 1px solid red;
+
+}
+
+main .cartao-pokemon:hover {
+	background: linear-gradient(to bottom, #0000ff, #ff00ff);
+	box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000;
+
+}
+
+.modo-escuro .cartao-pokemon {
+	background-color: #2b2b2b;
+	border: 1px solid red;
+}
+
+main .cartao-pokemon .informacoes {
+	background-color: #808080;
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid #333333;
+	border-radius: 10px;
+}
+
+main .cartao-pokemon .informacoes span {
+	padding: 5px;
+	text-transform: uppercase;
+	font-size: 17px;
+}
+
+main .cartao-pokemon .gif {
+	width: 90px;
+	height: 90px;
+}
+
+main .cartao-pokemon .tipos {
+	display: flex;
+	gap: 15px;
+}
+
+main .cartao-pokemon .tipo {
+	padding: 8px;
+	border-radius: 10px;
+}
+
+.grama {
+	background-color: #27db45ee;
+}
+
+.veneno {
+	background-color: #f339cbfb;
+}
+
+.fogo {
+	background-color: #f07314;
+}
+
+.agua {
+	background-color: #36bee7;
+}
+
+.inseto {
+	background-color: #a1b40d;
+}
+
+main .descricao {
+	max-height: 80px;
+	overflow-y: scroll;
+	font-size: 14px;
+	padding-right: 10px;
+}
